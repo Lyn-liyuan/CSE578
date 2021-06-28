@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Play skills cluster</title>
+<link href="cluster.css" data-prefetch="true" rel="stylesheet">
+</head>
+
+<body>
+    <div style="position: absolute;right: 200px;">
+       
+        <h1>选手技术聚类</h1>
+        <p>采用层次聚类方式探索参赛选手技术对比赛的影响</p>
+        <p>选择进入历年第四轮比赛的全部选手，将平均发球成功率，一次得分率，反球得分率，破发成功率组成的向量进行层次聚类</p>
+        <p>请选择凝聚聚类距离度量方式</p>
+        <form>
+            <label><input type="radio" name="mode" value="ward" checked> Ward</label>
+            <label><input type="radio" name="mode" value="single"> Single</label>
+            <label><input type="radio" name="mode" value="complete"> Complete</label>
+          </form>
+          <p><a href="index.html">冠军之路</a></p>
+
+    </div>
+    <svg width="1080" height="960"></svg>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="cluster.js"></script>
+
+</body>
+</html> 
