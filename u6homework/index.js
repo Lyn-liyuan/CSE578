@@ -16,7 +16,7 @@ var stratify = d3.stratify()
     .parentId(function (d) { return d.parent; });
 
 var tree = d3.cluster()
-    .size([360, 390])
+    .size([360, 360])
     .separation(function (a, b) { return (a.parent == b.parent ? 1 : 2) / a.depth; });
 
 d3.json("2013.json", function (error, data) {
